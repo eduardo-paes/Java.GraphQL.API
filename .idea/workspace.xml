@@ -5,26 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e34cb96e-422b-4254-a6dc-a8fa236cc348" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/application/interfaces/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/application/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/domain/account/IAuthenticate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/domain/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/domain/interfaces/IUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/domain/validation/DomainExceptionValidation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/infrastrucure/data/identity/AuthenticateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/infrastrucure/data/repositories/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/presentation/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphql/.graphqlconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/graphql/schemas/user.schema.graphqls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/application/interfaces/IAuthenticateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/application/services/AuthenticateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/domain/account/IAuthenticateRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/infrastrucure/data/identity/AuthenticateRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/infrastrucure/security/JwtAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/infrastrucure/security/JwtGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/infrastrucure/security/JwtSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/infrastrucure/security/JwtTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/infrastrucure/security/JwtValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/presentation/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/domain/account/IAuthenticate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/infrastrucure/data/identity/AuthenticateService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/presentation/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/presentation/controller/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +30,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="GraphQL File" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="GraphQL File" />
       </list>
     </option>
   </component>
@@ -77,24 +73,41 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/graphql/schemas" />
     </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="api.domain.entities" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="19" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="api.Main" />
-      <module name="GraphQL.API.v2" />
+      <module name="graphql-api" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
