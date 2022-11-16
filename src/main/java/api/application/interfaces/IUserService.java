@@ -6,9 +6,9 @@ import java.util.Optional;
 import java.util.UUID;
 
 public interface IUserService {
-    Iterable<User> GetUsers();
-    Optional<User> GetUser(Long id);
-    User Add(String email, String password);
-    User Update(User user);
-    void Delete(UUID id);
+    Iterable<User> getUsers();
+    Optional<User> getUser(Long id);
+    User add(String email, String password);
+    User update(User user);
+    void delete(UUID id);
 }

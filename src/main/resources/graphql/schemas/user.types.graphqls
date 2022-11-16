@@ -1,0 +1,20 @@
+type User {
+    id: ID!
+    email: String!
+    password: String!
+    role: Role
+}
+
+type Auth {
+    token: String!
+    userId: ID!
+    userName: String!
+    userRole: Role
+}
+
+enum Role {
+    ADMIN
+    ANALYST
+    PROFESSOR
+    STUDENT
+}

@@ -1,10 +1,6 @@
 type Query {
     users: [User]
     user(id: ID!): User
-}
-
-type User {
-    id: ID!
-    email: String!
-    password: String!
+    login(email: String!, password: String!): Auth
+    findUserByEmail(email: String!): User
 }

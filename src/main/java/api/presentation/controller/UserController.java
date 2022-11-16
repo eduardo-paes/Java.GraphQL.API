@@ -14,25 +14,24 @@ import java.util.Optional;
 import java.util.UUID;
 
 @Controller
+@Secured("IS_AUTHENTICATED_FULLY")
 public class UserController {
     @Autowired
     private IUserService userService;
 
-    @PreAuthorize("hasRole('ADMIN')")
     @QueryMapping(name="user")
     public Optional<User> find(@Argument Long id) {
-        return userService.GetUser(id);
+        return userService.getUser(id);
     }
 
-    @Secured("ROLE_USER")
     @QueryMapping(name="users")
     public Iterable<User> findAll(@Argument UUID id){
-        return userService.GetUsers();
+        return userService.getUsers();
     }
 
     @MutationMapping(name = "addUser")
     public User create(@Argument String email, @Argument String password){
-        return userService.Add(email, password);
+        return userService.add(email, password);
     }
 
 }

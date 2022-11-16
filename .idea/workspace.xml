@@ -5,22 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e34cb96e-422b-4254-a6dc-a8fa236cc348" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/application/interfaces/IAuthenticateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/application/services/AuthenticateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/domain/account/IAuthenticateRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/infrastrucure/data/identity/AuthenticateRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/infrastrucure/security/JwtAuthenticationProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/infrastrucure/security/JwtGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/infrastrucure/security/JwtSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/infrastrucure/security/JwtTokenFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/infrastrucure/security/JwtValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/presentation/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/application/security/TokenGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/application/security/TokenPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/application/security/TokenUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/application/security/jwt/JWTAuthorizationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/application/security/jwt/JWTTokenGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/application/security/jwt/JWTTokenUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/domain/entities/Auth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/domain/enums/ERole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/domain/interfaces/IAuthRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/presentation/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/presentation/exception/DuplicateEntryException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/graphql/schemas/user.types.graphqls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/domain/account/IAuthenticate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/infrastrucure/data/identity/AuthenticateService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/application/interfaces/IAuthenticateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/application/interfaces/IAuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/application/interfaces/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/application/interfaces/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/application/services/AuthenticateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/application/services/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/application/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/application/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/domain/account/IAuthenticateRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/domain/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/domain/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/domain/interfaces/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/domain/interfaces/IUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/infrastrucure/data/identity/AuthenticateRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/infrastrucure/security/JwtAuthenticationProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/infrastrucure/security/JwtGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/infrastrucure/security/JwtSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/infrastrucure/security/JwtTokenFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/infrastrucure/security/JwtValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/presentation/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/presentation/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/api/presentation/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/presentation/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/graphql/schemas/user.schema.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/graphql/schemas/user.schema.graphqls" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +46,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="GraphQL File" />
-        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
+        <option value="GraphQL File" />
       </list>
     </option>
   </component>
@@ -71,13 +88,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/Projetos/CEFET/Java.API/src/main/resources/graphql/schemas",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.fileTypes"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projetos\CEFET\Java.API\src\main\resources\graphql\schemas" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/graphql/schemas" />
     </key>
@@ -139,5 +160,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.beans.factory.BeanCreationException" package="org.springframework.beans.factory" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
