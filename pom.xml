@@ -11,10 +11,12 @@
     <groupId>graphql.api</groupId>
     <artifactId>graphql-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>graphql-api</name>
-    <description>Demo project for Spring Boot and GraphQL</description>
+    <name>copet-system-api</name>
+    <description>CopetSystem.API to manage CNPQ resources and for projects control.</description>
     <properties>
         <java.version>19</java.version>
+        <graphqljavatools.version>13.0.2</graphqljavatools.version>
+        <javajwt.version>4.2.1</javajwt.version>
     </properties>
 
     <dependencies>
@@ -51,7 +53,7 @@
         <dependency>
             <groupId>com.graphql-java-kickstart</groupId>
             <artifactId>graphql-java-tools</artifactId>
-            <version>13.0.2</version>
+            <version>${graphqljavatools.version}</version>
         </dependency>
 
         <!--SECURITY-->
@@ -62,7 +64,7 @@
         <dependency>
             <groupId>com.auth0</groupId>
             <artifactId>java-jwt</artifactId>
-            <version>4.2.1</version>
+            <version>${javajwt.version}</version>
         </dependency>
 
         <!--DATABASE-->

@@ -4,10 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e34cb96e-422b-4254-a6dc-a8fa236cc348" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/graphql/schemas/user.schema.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/graphql/schemas/user.schema.graphqls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/graphql/schemas/user.types.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/graphql/schemas/user.types.graphqls" afterDir="false" />
+    <list default="true" id="e34cb96e-422b-4254-a6dc-a8fa236cc348" name="Changes" comment="feat: add user-dto and mutation in schema for tests">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/copetsystem/api/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/application/interfaces/IAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/copetsystem/api/application/interfaces/IAuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/application/interfaces/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/copetsystem/api/application/interfaces/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/application/security/TokenGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/copetsystem/api/application/security/TokenGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/application/security/TokenPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/copetsystem/api/application/security/TokenPayload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/application/security/TokenUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/copetsystem/api/application/security/TokenUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/application/security/jwt/JWTAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/copetsystem/api/application/security/jwt/JWTAuthorizationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/application/security/jwt/JWTTokenGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/copetsystem/api/application/security/jwt/JWTTokenGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/application/security/jwt/JWTTokenUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/copetsystem/api/application/security/jwt/JWTTokenUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/application/services/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/copetsystem/api/application/services/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/application/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/copetsystem/api/application/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/domain/entities/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/copetsystem/api/domain/entities/Auth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/domain/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/copetsystem/api/domain/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/domain/enums/ERole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/copetsystem/api/domain/enums/ERole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/domain/interfaces/IAuthRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/copetsystem/api/domain/interfaces/IAuthRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/domain/interfaces/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/copetsystem/api/domain/interfaces/IUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/domain/validation/DomainExceptionValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/copetsystem/api/domain/validation/DomainExceptionValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/infrastrucure/data/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/copetsystem/api/infrastrucure/data/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/presentation/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/copetsystem/api/presentation/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/presentation/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/copetsystem/api/presentation/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/presentation/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/copetsystem/api/presentation/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/presentation/exception/DuplicateEntryException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/copetsystem/api/presentation/exception/DuplicateEntryException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +139,14 @@
       <option name="presentableId" value="Default" />
       <updated>1668456423408</updated>
     </task>
+    <task id="LOCAL-00001" summary="feat: add user-dto and mutation in schema for tests">
+      <created>1669161859208</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669161859208</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,6 +159,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: add user-dto and mutation in schema for tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add user-dto and mutation in schema for tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
