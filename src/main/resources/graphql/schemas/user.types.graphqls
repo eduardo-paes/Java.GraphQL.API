@@ -1,3 +1,9 @@
+type UserReadDto {
+    id: ID!
+    email: String!
+    role: Role
+}
+
 type User {
     id: ID!
     email: String!

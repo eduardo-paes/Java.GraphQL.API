@@ -1,6 +1,10 @@
 type Query {
-    users: [User]
-    user(id: ID!): User
+    users: [UserReadDto]
+    user(id: ID!): UserReadDto
     login(email: String!, password: String!): Auth
     findUserByEmail(email: String!): User
+}
+
+type Mutation {
+    deleteUser(id: ID!): Boolean
 }
